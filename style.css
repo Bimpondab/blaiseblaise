@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+nav{
+    width: 100%;
+}
+.nav_band{
+    background-color:rgb(91, 201, 252);
+    padding: 2rem;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
+    position:static;
+}
+
+.nav_band .logo{
+    font-size: 18px;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+
+.nav_band .nav_links{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav_links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    list-style-type: none;
+}
+.nav_links ul li a{
+    text-decoration: none;
+   
+    color: #fff;
+    font-weight: 200;
+}
+.nav_links a:hover{
+    color: rgb(51, 147, 236) ;
+}
+
+/* button */
+
+.nav_band button{
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 5px ;
+    width: fit-content;
+    color:rgb(59, 58, 58);
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    color: blue;
+}
+
+/* partie 2 du section 2 */
+
+.description{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 500px 500px;
+  padding-top: 4rem;
+  /* background-color: blue; */
+  gap: 10px;
+  height: 88vh;
+}
+
+.description .desc_personel{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+.description .desc_personel  h1{
+    font-size: 3rem;
+}
+.description .desc_personel p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+/* partie image */
+.description .image{
+    /* background-color: blue;  */
+    display: flex;
+    justify-content: center;
+}
+.description .image img{
+    width: 60%;
+    height: 450px;
+    border-radius: 50px 300px 0 300px;
+}
+
+/* partie 3 galeries */
+
+.album h1{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.galerie{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+.galerie img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* partie 3 contacts */
+footer h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding: 1rem;
+    height: 85vh;
+    gap: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact .partie_1{
+    flex: 100px;
+    padding-top: 60px;
+}
+.contact .partie_1 h1{
+    color: rgb(91, 201, 252);
+}
+.contact .partie_1 p{
+    padding-top: 30px;
+    font-size: 18px;
+    
+}
+.contact .partie_2{
+    flex: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 35px;
+    
+    margin-bottom: 20px;
+}
+.partie_2 h1{
+    color: rgb(91, 201, 252);
+}
+.partie_2 input{
+    border: solid 1px gray;
+    border-radius: 15px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    outline: none;
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 40px;
+    background: transparent;
+    color: gray;
+    transition: 0.1s ease;
+}
+.partie_2 input:focus,
+input:valid{
+    color: blue;
+}
+.partie_2 .btn{
+    display:flex ;
+    gap: 10px;
+    padding-bottom: 18px;
+}
+.partie_2 .btn button{
+    width: 50%;
+    
+    text-align: center;
+    border: solid 1px #fff;
+    outline: none;
+    padding: 10px;
+    border-radius: 1rem;
+    font-size: 16px;
+    
+}
+.partie_2 textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-size: 20px;
+    padding: 45px;
+    text-align: center;   
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 10px;
+}
